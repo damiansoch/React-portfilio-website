@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #111111;
         font-family: 'Inter', sans-serif;
+        margin: auto;
     }
     button{
         font-weight: bold;
@@ -44,8 +45,6 @@ const GlobalStyle = createGlobalStyle`
         color:#23d997 ;
     }
     a{
-        font-size: 1.1rem;
-        font-family: 'Inter', sans-serif;
 
     }
     p{

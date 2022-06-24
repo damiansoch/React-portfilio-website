@@ -2,8 +2,10 @@ import React from "react";
 import home1 from "../image/New/home1.jpg";
 import { About, Description, Image, Hide } from "./styles";
 
+//framer motion
+import { motion } from "framer-motion";
+
 // styled
-import styled from "styled-components";
 
 const AboutSection = () => {
   return (
@@ -15,7 +17,15 @@ const AboutSection = () => {
           </div>
           <Hide>
             <h2>
-              your <span>dreams</span> come
+              your{" "}
+              <motion.span
+                animate={{ opacity: 1, transition: { duration: 2 } }}
+                initial={{ opacity: 0 }}
+                whileHover={{ scale: 1.2, transition: { duration: 1 } }}
+              >
+                dreams
+              </motion.span>{" "}
+              come
             </h2>
           </Hide>
           <Hide>

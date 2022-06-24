@@ -1,0 +1,45 @@
+.imgContainer {
+  height: 90vh;
+  margin-top: 10vh;
+  position: relative;
+  overflow: hidden;
+
+  .img {
+    width: 10vw;
+    border-radius: 6px;
+    -webkit-filter: brightness(0.5); /* Safari 6.0 - 9.0 */
+    filter: brightness(0.9);
+    opacity: 0.8;
+  }
+  @for $i from 1 through 40 {
+    .img:nth-child(#{$i}) {
+      top: random(80) + vh;
+      left: random(90) + vw;
+      position: absolute;
+    }
+  }
+}
+.text1 {
+  width: 80vw;
+  height: 50vh;
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 20px 2px 20px;
+}
+#title1 {
+  color: white;
+  z-index: 2;
+}
+#text1 {
+  color: white;
+  z-index: 2;
+}
